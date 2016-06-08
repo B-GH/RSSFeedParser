@@ -51,18 +51,18 @@
             <div class="list-group">
                 </a>
                 <?php
-                    include('RSSFeedItem.class.php');
-                    include('RSSFeedParser.class.php');
+                    include 'RSSFeedItem.class.php';
+                    include 'RSSFeedParser.class.php';
 
                     $rss = new RSSFeedParser();
 
                     $rss->load('http://feeds.bbci.co.uk/news/world/rss.xml');
 
                     $items = $rss->getItems();
-                    foreach($items as $item) {
-                        echo '<a href="' . $item->getLink() . '" class="list-group-item">';
-                        echo '    <h4 class="list-group-item-heading">' . $item->getTitle() . '</h4>';
-                        echo '    <p class="list-group-item-text">' . $item->getDescription() . '</p>';
+                    foreach ($items as $item) {
+                        echo '<a href="'.$item->getLink().'" class="list-group-item">';
+                        echo '    <h4 class="list-group-item-heading">'.$item->getTitle().'</h4>';
+                        echo '    <p class="list-group-item-text">'.$item->getDescription().'</p>';
                         echo '</a>';
                     }
                 ?>

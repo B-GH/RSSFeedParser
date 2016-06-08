@@ -1,36 +1,35 @@
 <?php
 
 /**
- * Class RSSFeedItem
+ * Class RSSFeedItem.
  *
  * @author Badr EL Ghailani / bgh.code@gmail.com
  */
 class RSSFeedItem
 {
-
     /**
-     * title
+     * title.
      *
      * @var string
      */
     protected $title;
 
     /**
-     * link
+     * link.
      *
      * @var string
      */
     protected $link;
 
     /**
-     * description
+     * description.
      *
      * @var string
      */
     protected $description;
 
     /**
-     * getTitle
+     * getTitle.
      *
      * @return string title
      */
@@ -40,19 +39,21 @@ class RSSFeedItem
     }
 
     /**
-     * setTitle
+     * setTitle.
      *
      * @param string $title
+     *
      * @return RSSFeedItem
      */
     public function setTitle($title)
     {
         $this->title = $title;
+
         return $this;
     }
 
     /**
-     * getLink
+     * getLink.
      *
      * @return string link
      */
@@ -62,19 +63,21 @@ class RSSFeedItem
     }
 
     /**
-     * setLink
+     * setLink.
      *
      * @param string $link
+     *
      * @return RSSFeedItem
      */
     public function setLink($link)
     {
         $this->link = $link;
+
         return $this;
     }
 
     /**
-     * getDescription
+     * getDescription.
      *
      * @return string description
      */
@@ -84,29 +87,30 @@ class RSSFeedItem
     }
 
     /**
-     * setDescription
+     * setDescription.
+     *
      * @param string $desc
+     *
      * @return RSSFeedItem
      */
     public function setDescription($desc)
     {
         $this->description = $desc;
+
         return $this;
     }
 
     /**
-     * toArray
+     * toArray.
      *
      * @return array item
      */
     public function toArray()
     {
-        return array(
-            'title' => $this->getTitle(),
-            'link' => $this->getLink(),
+        return [
+            'title'       => $this->getTitle(),
+            'link'        => $this->getLink(),
             'description' => $this->getDescription(),
-        );
+        ];
     }
-
 }
-
