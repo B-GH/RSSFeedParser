@@ -1,3 +1,5 @@
+<a href="https://styleci.io/repos/52954584"><img src="https://styleci.io/repos/52954584/shield?branch=master" alt="StyleCI"></a>
+
 ## RSSFeedParser
 
 Simple PHP library to parse RSS feeds.
